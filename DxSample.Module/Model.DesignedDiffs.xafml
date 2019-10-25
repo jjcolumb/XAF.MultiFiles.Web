@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="DxSample">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="19.1.2.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="Resume_Portfolio_ListView" AllowNew="False" AllowUnlink="False" />
+  </Views>
+</Application>

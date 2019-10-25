@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options CollectionsEditMode="Edit" />
+  <SchemaModules>
+    <SchemaModule Name="SystemAspNetModule" Version="19.1.2.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="19.1.2.0" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="System.Drawing.Color" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxColorPickerPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <DetailView Id="Resume_DetailView">
+      <Items>
+        <ControlDetailItem Id="FileAttachmentsControl" ControlTypeName="DevExpress.Web.ASPxUploadControl" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="6.8716094032549728">
+            <LayoutGroup Id="Resume" RelativeSize="100">
+              <LayoutItem Id="Title" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Portfolio_Group" RelativeSize="93.128390596745021" Caption="Portfolio" Direction="Vertical">
+            <LayoutItem Id="FileAttachmentsControl" ViewItem="FileAttachmentsControl" Index="0" RelativeSize="6.7368421052631575" IsNewNode="True" />
+            <LayoutItem Id="Portfolio" RelativeSize="93.263157894736835" Index="1" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Resume_Portfolio_ListView" AllowEdit="True">
+      <Columns>
+        <ColumnInfo Id="Oid" Width="82" />
+        <ColumnInfo Id="Resume" Width="82" />
+        <ColumnInfo Id="File" Width="149" />
+        <ColumnInfo Id="DocumentType" Width="97" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
